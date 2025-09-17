@@ -27,6 +27,7 @@ public class halaman_login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -39,7 +40,11 @@ public class halaman_login extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(720, 480));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(0, 51, 153));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/download (1).jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, 150, 140));
+
+        jLabel1.setBackground(new java.awt.Color(0, 0, 102));
         jLabel1.setOpaque(true);
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 480));
 
@@ -90,6 +95,7 @@ public class halaman_login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
