@@ -92,7 +92,6 @@ public class resaurce_admin extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(0, 51, 153));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("DAFTAR USER");
         jButton2.setOpaque(true);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
