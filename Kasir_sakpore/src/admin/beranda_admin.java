@@ -85,16 +85,15 @@ public class beranda_admin extends javax.swing.JPanel {
         jPanel7.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/CATAT.png"))); // NOI18N
         jLabel1.setOpaque(true);
         jPanel7.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("JUMLAH TRANSAKSI HARI INI");
         jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("000 TRANSAKSI");
         jPanel7.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
@@ -108,17 +107,16 @@ public class beranda_admin extends javax.swing.JPanel {
         jButton2.setText("LIHAT DETAIL");
         jPanel9.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/MABAR.png"))); // NOI18N
         jLabel4.setOpaque(true);
         jPanel9.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("JUMLAH BARANG TERSEDIA");
         jPanel9.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("000 BARANG");
         jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
@@ -133,16 +131,15 @@ public class beranda_admin extends javax.swing.JPanel {
         jPanel10.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/MABAR.png"))); // NOI18N
         jLabel7.setOpaque(true);
         jPanel10.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("JUMLAH STOK BRG HABIS");
         jPanel10.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("000 BARANG");
         jPanel10.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
@@ -161,12 +158,10 @@ public class beranda_admin extends javax.swing.JPanel {
         jPanel11.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText("JUMLAH PENGELUARAN BULANAN");
         jPanel11.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Rp. 000");
         jPanel11.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
@@ -185,12 +180,10 @@ public class beranda_admin extends javax.swing.JPanel {
         jPanel12.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("JUMLAH PENDAPATAN HARI INI");
         jPanel12.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Rp. 000");
         jPanel12.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
@@ -209,12 +202,10 @@ public class beranda_admin extends javax.swing.JPanel {
         jPanel13.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
         jLabel17.setText("JUMLAH PEMASUKAN BULANAN");
         jPanel13.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setText("Rp. 000");
         jPanel13.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
