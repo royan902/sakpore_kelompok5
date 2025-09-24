@@ -44,10 +44,14 @@ public class dashboard_admin extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         A_txt_2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        A_btn_daftar_user = new javax.swing.JButton();
         A_btn_beranda = new javax.swing.JButton();
-        A_btn_laporan = new javax.swing.JButton();
-        A_btn_barang = new javax.swing.JButton();
+        A_btn_daftar_user = new javax.swing.JButton();
+        A_btn_lap_keuangan = new javax.swing.JButton();
+        A_btn_lap_transaksi = new javax.swing.JButton();
+        A_btn_lap_pembelian = new javax.swing.JButton();
+        A_btn_daftar_brg = new javax.swing.JButton();
+        A_btn_kategori = new javax.swing.JButton();
+        A_btn_pembelian = new javax.swing.JButton();
         A_panel_utama = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,19 +104,8 @@ public class dashboard_admin extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 51, 153));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        A_btn_daftar_user.setBackground(new java.awt.Color(0, 51, 153));
-        A_btn_daftar_user.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        A_btn_daftar_user.setText("DAFTAR USER");
-        A_btn_daftar_user.setOpaque(true);
-        A_btn_daftar_user.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_daftar_userActionPerformed(evt);
-            }
-        });
-        jPanel2.add(A_btn_daftar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 200, 70));
-
         A_btn_beranda.setBackground(new java.awt.Color(0, 51, 153));
-        A_btn_beranda.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        A_btn_beranda.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_beranda.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_beranda.setText("BERANDA");
         A_btn_beranda.setOpaque(true);
@@ -121,69 +114,147 @@ public class dashboard_admin extends javax.swing.JFrame {
                 A_btn_berandaActionPerformed(evt);
             }
         });
-        jPanel2.add(A_btn_beranda, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 200, 70));
+        jPanel2.add(A_btn_beranda, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 230, 60));
 
-        A_btn_laporan.setBackground(new java.awt.Color(0, 51, 153));
-        A_btn_laporan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        A_btn_laporan.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_laporan.setText("LAPORAN");
-        A_btn_laporan.setOpaque(true);
-        A_btn_laporan.addActionListener(new java.awt.event.ActionListener() {
+        A_btn_daftar_user.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_daftar_user.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        A_btn_daftar_user.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_daftar_user.setText("DAFTAR USER");
+        A_btn_daftar_user.setOpaque(true);
+        A_btn_daftar_user.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_laporanActionPerformed(evt);
+                A_btn_daftar_userActionPerformed(evt);
             }
         });
-        jPanel2.add(A_btn_laporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 200, 70));
+        jPanel2.add(A_btn_daftar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 230, 60));
 
-        A_btn_barang.setBackground(new java.awt.Color(0, 51, 153));
-        A_btn_barang.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        A_btn_barang.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_barang.setText("BARANG");
-        A_btn_barang.setOpaque(true);
-        A_btn_barang.addActionListener(new java.awt.event.ActionListener() {
+        A_btn_lap_keuangan.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_lap_keuangan.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        A_btn_lap_keuangan.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_lap_keuangan.setText("LAPORAN KEUANGAN");
+        A_btn_lap_keuangan.setOpaque(true);
+        A_btn_lap_keuangan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_barangActionPerformed(evt);
+                A_btn_lap_keuanganActionPerformed(evt);
             }
         });
-        jPanel2.add(A_btn_barang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 70));
+        jPanel2.add(A_btn_lap_keuangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 230, 60));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 960));
+        A_btn_lap_transaksi.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_lap_transaksi.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        A_btn_lap_transaksi.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_lap_transaksi.setText("LAPORAN TRANSAKSI");
+        A_btn_lap_transaksi.setOpaque(true);
+        A_btn_lap_transaksi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A_btn_lap_transaksiActionPerformed(evt);
+            }
+        });
+        jPanel2.add(A_btn_lap_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 230, 60));
 
-        A_panel_utama.setMinimumSize(new java.awt.Dimension(1700, 940));
+        A_btn_lap_pembelian.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_lap_pembelian.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        A_btn_lap_pembelian.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_lap_pembelian.setText("LAPORAN PEMBELIAN");
+        A_btn_lap_pembelian.setOpaque(true);
+        A_btn_lap_pembelian.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A_btn_lap_pembelianActionPerformed(evt);
+            }
+        });
+        jPanel2.add(A_btn_lap_pembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 230, 60));
+
+        A_btn_daftar_brg.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_daftar_brg.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        A_btn_daftar_brg.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_daftar_brg.setText("DAFTAR BARANG");
+        A_btn_daftar_brg.setOpaque(true);
+        A_btn_daftar_brg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A_btn_daftar_brgActionPerformed(evt);
+            }
+        });
+        jPanel2.add(A_btn_daftar_brg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 230, 60));
+
+        A_btn_kategori.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_kategori.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        A_btn_kategori.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_kategori.setText("KATEGORI BARANG");
+        A_btn_kategori.setOpaque(true);
+        A_btn_kategori.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A_btn_kategoriActionPerformed(evt);
+            }
+        });
+        jPanel2.add(A_btn_kategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 230, 60));
+
+        A_btn_pembelian.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_pembelian.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        A_btn_pembelian.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_pembelian.setText("PEMBELIAN BRG");
+        A_btn_pembelian.setOpaque(true);
+        A_btn_pembelian.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A_btn_pembelianActionPerformed(evt);
+            }
+        });
+        jPanel2.add(A_btn_pembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 230, 60));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 250, 960));
+
+        A_panel_utama.setMinimumSize(new java.awt.Dimension(1650, 940));
 
         javax.swing.GroupLayout A_panel_utamaLayout = new javax.swing.GroupLayout(A_panel_utama);
         A_panel_utama.setLayout(A_panel_utamaLayout);
         A_panel_utamaLayout.setHorizontalGroup(
             A_panel_utamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1700, Short.MAX_VALUE)
+            .addGap(0, 1650, Short.MAX_VALUE)
         );
         A_panel_utamaLayout.setVerticalGroup(
             A_panel_utamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 940, Short.MAX_VALUE)
         );
 
-        getContentPane().add(A_panel_utama, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 1700, 940));
+        getContentPane().add(A_panel_utama, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 1650, 940));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void A_btn_daftar_userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_daftar_userActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_daftar_userActionPerformed
-
-    private void A_btn_laporanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_laporanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_laporanActionPerformed
-
-    private void A_btn_barangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_barangActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_barangActionPerformed
-
     private void A_btn_berandaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_berandaActionPerformed
         // TODO add your handling code here:
-         beranda_admin beranda = new beranda_admin();   // buat instance panel
+        beranda_admin beranda = new beranda_admin();   // buat instance panel
         showPanel(beranda);
     }//GEN-LAST:event_A_btn_berandaActionPerformed
+
+    private void A_btn_daftar_userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_daftar_userActionPerformed
+        // TODO add your handling code here:
+        daftar_user user = new daftar_user();   // buat instance panel
+        showPanel(user);
+    }//GEN-LAST:event_A_btn_daftar_userActionPerformed
+
+    private void A_btn_lap_keuanganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_lap_keuanganActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A_btn_lap_keuanganActionPerformed
+
+    private void A_btn_lap_transaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_lap_transaksiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A_btn_lap_transaksiActionPerformed
+
+    private void A_btn_lap_pembelianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_lap_pembelianActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A_btn_lap_pembelianActionPerformed
+
+    private void A_btn_daftar_brgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_daftar_brgActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A_btn_daftar_brgActionPerformed
+
+    private void A_btn_kategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_kategoriActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A_btn_kategoriActionPerformed
+
+    private void A_btn_pembelianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_pembelianActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A_btn_pembelianActionPerformed
 
     /**
      * @param args the command line arguments
@@ -224,10 +295,14 @@ public class dashboard_admin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton A_btn_barang;
     private javax.swing.JButton A_btn_beranda;
+    private javax.swing.JButton A_btn_daftar_brg;
     private javax.swing.JButton A_btn_daftar_user;
-    private javax.swing.JButton A_btn_laporan;
+    private javax.swing.JButton A_btn_kategori;
+    private javax.swing.JButton A_btn_lap_keuangan;
+    private javax.swing.JButton A_btn_lap_pembelian;
+    private javax.swing.JButton A_btn_lap_transaksi;
+    private javax.swing.JButton A_btn_pembelian;
     private javax.swing.JPanel A_panel_utama;
     private javax.swing.JLabel A_txt_1;
     private javax.swing.JLabel A_txt_2;
