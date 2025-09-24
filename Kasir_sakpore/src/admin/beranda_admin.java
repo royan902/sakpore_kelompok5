@@ -26,7 +26,6 @@ public class beranda_admin extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -61,21 +60,6 @@ public class beranda_admin extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(1700, 940));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
-        );
-
-        add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 300, 50, 50));
-
         jPanel7.setBackground(new java.awt.Color(153, 153, 153));
         jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -84,7 +68,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jButton1.setText("LIHAT DETAIL");
         jPanel7.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setBackground(new java.awt.Color(153, 153, 153));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/CATAT.png"))); // NOI18N
         jLabel1.setOpaque(true);
         jPanel7.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
@@ -97,7 +81,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jLabel3.setText("000 TRANSAKSI");
         jPanel7.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
-        add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 50, 500, 250));
+        add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 70, 500, 250));
 
         jPanel9.setBackground(new java.awt.Color(153, 153, 153));
         jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -120,7 +104,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jLabel6.setText("000 BARANG");
         jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
-        add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 500, 250));
+        add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 500, 250));
 
         jPanel10.setBackground(new java.awt.Color(153, 153, 153));
         jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -130,7 +114,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jButton3.setText("LIHAT DETAIL");
         jPanel10.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setBackground(new java.awt.Color(153, 153, 153));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/MABAR.png"))); // NOI18N
         jLabel7.setOpaque(true);
         jPanel10.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
@@ -143,7 +127,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jLabel9.setText("000 BARANG");
         jPanel10.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
-        add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 50, 500, 250));
+        add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 500, 250));
 
         jPanel11.setBackground(new java.awt.Color(153, 153, 153));
         jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -153,7 +137,8 @@ public class beranda_admin extends javax.swing.JPanel {
         jButton4.setText("LIHAT DETAIL");
         jPanel11.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
-        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel10.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PP.png"))); // NOI18N
         jLabel10.setOpaque(true);
         jPanel11.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
@@ -165,7 +150,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jLabel20.setText("Rp. 000");
         jPanel11.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
-        add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 350, 500, 250));
+        add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 370, 500, 250));
 
         jPanel12.setBackground(new java.awt.Color(153, 153, 153));
         jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -175,7 +160,8 @@ public class beranda_admin extends javax.swing.JPanel {
         jButton5.setText("LIHAT DETAIL");
         jPanel12.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
-        jLabel13.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel13.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PP.png"))); // NOI18N
         jLabel13.setOpaque(true);
         jPanel12.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
@@ -187,7 +173,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jLabel15.setText("Rp. 000");
         jPanel12.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
-        add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 500, 250));
+        add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 500, 250));
 
         jPanel13.setBackground(new java.awt.Color(153, 153, 153));
         jPanel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -197,7 +183,8 @@ public class beranda_admin extends javax.swing.JPanel {
         jButton6.setText("LIHAT DETAIL");
         jPanel13.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 173, 440, 50));
 
-        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel16.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PP.png"))); // NOI18N
         jLabel16.setOpaque(true);
         jPanel13.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 100, 100));
 
@@ -209,7 +196,7 @@ public class beranda_admin extends javax.swing.JPanel {
         jLabel18.setText("Rp. 000");
         jPanel13.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
-        add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, 500, 250));
+        add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 370, 500, 250));
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -242,7 +229,6 @@ public class beranda_admin extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
