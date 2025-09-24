@@ -4,6 +4,11 @@
  */
 package login;
 
+import config.Koneksi;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Acer Aspire Lite 15
@@ -16,6 +21,8 @@ public class halaman_login extends javax.swing.JFrame {
     public halaman_login() {
         initComponents();
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,10 +38,10 @@ public class halaman_login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        L_tf_username = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        L_tf_password = new javax.swing.JTextField();
+        L_btn_login = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -64,28 +71,75 @@ public class halaman_login extends javax.swing.JFrame {
         jLabel3.setText("USERNAME :");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 130, -1));
 
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, 220, 40));
+        L_tf_username.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jPanel1.add(L_tf_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, 220, 40));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("PASSWORD :");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, 130, -1));
 
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 220, 40));
+        L_tf_password.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jPanel1.add(L_tf_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 220, 40));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("LOGIN");
-        jButton1.setOpaque(true);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 220, 40));
+        L_btn_login.setBackground(new java.awt.Color(0, 0, 102));
+        L_btn_login.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        L_btn_login.setForeground(new java.awt.Color(255, 255, 255));
+        L_btn_login.setText("LOGIN");
+        L_btn_login.setOpaque(true);
+        L_btn_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                L_btn_loginActionPerformed(evt);
+            }
+        });
+        jPanel1.add(L_btn_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 220, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void L_btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_L_btn_loginActionPerformed
+        // TODO add your handling code here:
+        String username = L_tf_username.getText().trim();
+        String password = new String(L_tf_password.getText()).trim();
+
+        if (username.isEmpty() || password.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Username dan Password tidak boleh kosong!");
+            return;
+        }
+
+        try (Connection conn = Koneksi.getConnection()) {
+            String sql = "SELECT * FROM \"user\" WHERE username = ? AND password = ?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, username);
+            ps.setString(2, password);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                String jabatan = rs.getString("jabatan");
+
+                if ("admin".equalsIgnoreCase(jabatan)) {
+                    JOptionPane.showMessageDialog(this, "Login berhasil sebagai Admin!");
+                    new admin.dashboard_admin().setVisible(true);
+                    this.dispose();
+                } else if ("kasir".equalsIgnoreCase(jabatan)) {
+                    JOptionPane.showMessageDialog(this, "Login berhasil sebagai Kasir!");
+                    new kasir.dashboard_kasir().setVisible(true);
+                    this.dispose();
+                } else {
+                    JOptionPane.showMessageDialog(this, "Jabatan tidak dikenali!");
+                }
+            } else {
+                JOptionPane.showMessageDialog(this, "Username atau Password salah!");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Terjadi kesalahan: " + e.getMessage());
+        }
+    }//GEN-LAST:event_L_btn_loginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -123,14 +177,14 @@ public class halaman_login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton L_btn_login;
+    private javax.swing.JTextField L_tf_password;
+    private javax.swing.JTextField L_tf_username;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
