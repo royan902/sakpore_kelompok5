@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/D:/New%20folder/github/sakpore_kelompok5/Kasir_sakpore/src/login/halaman_login.java</file>
+            <file>file:/D:/New%20folder/github/sakpore_kelompok5/Kasir_sakpore/src/admin/resaurce_admin.java</file>
+            <file>file:/D:/New%20folder/github/sakpore_kelompok5/Kasir_sakpore/src/admin/admin.java</file>
+            <file>file:/D:/New%20folder/github/sakpore_kelompok5/Kasir_sakpore/src/kasir/detail_transaksi.java</file>
+        </group>
+>>>>>>> 92fb9ab045aa15bda098afc8ea0b756f54fd6692
     </open-files>
 </project-private>
