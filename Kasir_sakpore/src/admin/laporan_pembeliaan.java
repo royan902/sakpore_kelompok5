@@ -34,8 +34,6 @@ public class laporan_pembeliaan extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
-        jYearChooser1 = new com.toedter.calendar.JYearChooser();
-        jMonthChooser2 = new com.toedter.calendar.JMonthChooser();
 
         setMinimumSize(new java.awt.Dimension(1650, 940));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -90,14 +88,6 @@ public class laporan_pembeliaan extends javax.swing.JPanel {
         jButton3.setText("EKSPOR PDF");
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 190, 50));
 
-        jYearChooser1.setBackground(new java.awt.Color(255, 255, 255));
-        jYearChooser1.setForeground(new java.awt.Color(255, 255, 255));
-        jYearChooser1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jPanel1.add(jYearChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1500, 100, 110, 50));
-
-        jMonthChooser2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jPanel1.add(jMonthChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 100, 130, 50));
-
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 1630, 920));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -107,11 +97,9 @@ public class laporan_pembeliaan extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private com.toedter.calendar.JMonthChooser jMonthChooser2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private com.toedter.calendar.JYearChooser jYearChooser1;
     // End of variables declaration//GEN-END:variables
 }
