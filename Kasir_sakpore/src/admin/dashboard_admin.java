@@ -55,10 +55,11 @@ public class dashboard_admin extends javax.swing.JFrame {
         A_panel_utama = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
+        jPanel1.setBackground(java.awt.Color.lightGray);
         jPanel1.setMinimumSize(new java.awt.Dimension(1870, 100));
         jPanel1.setPreferredSize(new java.awt.Dimension(1920, 100));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -101,10 +102,10 @@ public class dashboard_admin extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 120));
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 153));
+        jPanel2.setBackground(java.awt.Color.gray);
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        A_btn_beranda.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_beranda.setBackground(java.awt.Color.darkGray);
         A_btn_beranda.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_beranda.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_beranda.setText("BERANDA");
@@ -116,7 +117,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_beranda, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 230, 60));
 
-        A_btn_daftar_user.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_daftar_user.setBackground(java.awt.Color.darkGray);
         A_btn_daftar_user.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_daftar_user.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_daftar_user.setText("DAFTAR USER");
@@ -128,7 +129,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_daftar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 230, 60));
 
-        A_btn_lap_keuangan.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_lap_keuangan.setBackground(java.awt.Color.darkGray);
         A_btn_lap_keuangan.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         A_btn_lap_keuangan.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_lap_keuangan.setText("LAPORAN KEUANGAN");
@@ -140,7 +141,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_lap_keuangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 230, 60));
 
-        A_btn_lap_transaksi.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_lap_transaksi.setBackground(java.awt.Color.darkGray);
         A_btn_lap_transaksi.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         A_btn_lap_transaksi.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_lap_transaksi.setText("LAPORAN TRANSAKSI");
@@ -152,7 +153,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_lap_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 230, 60));
 
-        A_btn_lap_pembelian.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_lap_pembelian.setBackground(java.awt.Color.darkGray);
         A_btn_lap_pembelian.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         A_btn_lap_pembelian.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_lap_pembelian.setText("LAPORAN PEMBELIAN");
@@ -164,7 +165,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_lap_pembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 230, 60));
 
-        A_btn_daftar_brg.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_daftar_brg.setBackground(java.awt.Color.darkGray);
         A_btn_daftar_brg.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_daftar_brg.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_daftar_brg.setText("DAFTAR BARANG");
@@ -176,7 +177,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_daftar_brg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 230, 60));
 
-        A_btn_kategori.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_kategori.setBackground(java.awt.Color.darkGray);
         A_btn_kategori.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_kategori.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_kategori.setText("KATEGORI BARANG");
@@ -188,7 +189,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_kategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 230, 60));
 
-        A_btn_pembelian.setBackground(new java.awt.Color(0, 51, 153));
+        A_btn_pembelian.setBackground(java.awt.Color.darkGray);
         A_btn_pembelian.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_pembelian.setForeground(new java.awt.Color(255, 255, 255));
         A_btn_pembelian.setText("PEMBELIAN BRG");
@@ -202,6 +203,7 @@ public class dashboard_admin extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 250, 960));
 
+        A_panel_utama.setBackground(new java.awt.Color(255, 255, 255));
         A_panel_utama.setMinimumSize(new java.awt.Dimension(1650, 940));
 
         javax.swing.GroupLayout A_panel_utamaLayout = new javax.swing.GroupLayout(A_panel_utama);
