@@ -59,7 +59,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(java.awt.Color.lightGray);
+        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
         jPanel1.setMinimumSize(new java.awt.Dimension(1870, 100));
         jPanel1.setPreferredSize(new java.awt.Dimension(1920, 100));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

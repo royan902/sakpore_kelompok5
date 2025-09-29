@@ -52,6 +52,7 @@ public class daftar_user extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
 
         setMinimumSize(new java.awt.Dimension(1650, 940));
+        setPreferredSize(new java.awt.Dimension(1650, 940));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
