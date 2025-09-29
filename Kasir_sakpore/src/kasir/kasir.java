@@ -8,12 +8,12 @@ package kasir;
  *
  * @author Acer Aspire Lite 15
  */
-public class detail_transaksi extends javax.swing.JPanel {
+public class kasir extends javax.swing.JPanel {
 
     /**
-     * Creates new form detail_transaksi
+     * Creates new form kasir
      */
-    public detail_transaksi() {
+    public kasir() {
         initComponents();
     }
 
