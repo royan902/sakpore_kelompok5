@@ -2,19 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package admin;
+package kasir;
 
+import admin.*;
 import java.awt.BorderLayout;
 /**
  *
  * @author user
  */
-public class dashboard_admin extends javax.swing.JFrame {
+public class dashboard_kasir extends javax.swing.JFrame {
 
     /**
      * Creates new form admin
      */
-    public dashboard_admin() {
+    public dashboard_kasir() {
         initComponents();
     }
     
@@ -45,13 +46,8 @@ public class dashboard_admin extends javax.swing.JFrame {
         A_txt_2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         A_btn_beranda = new javax.swing.JButton();
-        A_btn_daftar_user = new javax.swing.JButton();
-        A_btn_lap_keuangan = new javax.swing.JButton();
-        A_btn_lap_transaksi = new javax.swing.JButton();
-        A_btn_lap_pembelian = new javax.swing.JButton();
         A_btn_daftar_brg = new javax.swing.JButton();
-        A_btn_kategori = new javax.swing.JButton();
-        A_btn_pembelian = new javax.swing.JButton();
+        A_btn_daftar_brg1 = new javax.swing.JButton();
         A_panel_utama = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -66,7 +62,7 @@ public class dashboard_admin extends javax.swing.JFrame {
 
         A_txt_1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         A_txt_1.setForeground(new java.awt.Color(255, 255, 255));
-        A_txt_1.setText("ADMINE SAKPORE");
+        A_txt_1.setText("KASIR SAKPORE");
         jPanel1.add(A_txt_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 720, 100));
 
         jButton1.setBackground(new java.awt.Color(0, 51, 51));
@@ -81,7 +77,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Posisi : ADMIN");
+        jLabel2.setText("Posisi : KASIR");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1530, 60, 220, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 100)); // NOI18N
@@ -117,54 +113,6 @@ public class dashboard_admin extends javax.swing.JFrame {
         });
         jPanel2.add(A_btn_beranda, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 230, 60));
 
-        A_btn_daftar_user.setBackground(java.awt.Color.darkGray);
-        A_btn_daftar_user.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        A_btn_daftar_user.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_daftar_user.setText("DAFTAR USER");
-        A_btn_daftar_user.setOpaque(true);
-        A_btn_daftar_user.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_daftar_userActionPerformed(evt);
-            }
-        });
-        jPanel2.add(A_btn_daftar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 230, 60));
-
-        A_btn_lap_keuangan.setBackground(java.awt.Color.darkGray);
-        A_btn_lap_keuangan.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        A_btn_lap_keuangan.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_lap_keuangan.setText("LAPORAN KEUANGAN");
-        A_btn_lap_keuangan.setOpaque(true);
-        A_btn_lap_keuangan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_lap_keuanganActionPerformed(evt);
-            }
-        });
-        jPanel2.add(A_btn_lap_keuangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 230, 60));
-
-        A_btn_lap_transaksi.setBackground(java.awt.Color.darkGray);
-        A_btn_lap_transaksi.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        A_btn_lap_transaksi.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_lap_transaksi.setText("LAPORAN TRANSAKSI");
-        A_btn_lap_transaksi.setOpaque(true);
-        A_btn_lap_transaksi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_lap_transaksiActionPerformed(evt);
-            }
-        });
-        jPanel2.add(A_btn_lap_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 230, 60));
-
-        A_btn_lap_pembelian.setBackground(java.awt.Color.darkGray);
-        A_btn_lap_pembelian.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        A_btn_lap_pembelian.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_lap_pembelian.setText("LAPORAN PEMBELIAN");
-        A_btn_lap_pembelian.setOpaque(true);
-        A_btn_lap_pembelian.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_lap_pembelianActionPerformed(evt);
-            }
-        });
-        jPanel2.add(A_btn_lap_pembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 230, 60));
-
         A_btn_daftar_brg.setBackground(java.awt.Color.darkGray);
         A_btn_daftar_brg.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         A_btn_daftar_brg.setForeground(new java.awt.Color(255, 255, 255));
@@ -175,31 +123,19 @@ public class dashboard_admin extends javax.swing.JFrame {
                 A_btn_daftar_brgActionPerformed(evt);
             }
         });
-        jPanel2.add(A_btn_daftar_brg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 230, 60));
+        jPanel2.add(A_btn_daftar_brg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 230, 60));
 
-        A_btn_kategori.setBackground(java.awt.Color.darkGray);
-        A_btn_kategori.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        A_btn_kategori.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_kategori.setText("KATEGORI BARANG");
-        A_btn_kategori.setOpaque(true);
-        A_btn_kategori.addActionListener(new java.awt.event.ActionListener() {
+        A_btn_daftar_brg1.setBackground(java.awt.Color.darkGray);
+        A_btn_daftar_brg1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        A_btn_daftar_brg1.setForeground(new java.awt.Color(255, 255, 255));
+        A_btn_daftar_brg1.setText("KASIR");
+        A_btn_daftar_brg1.setOpaque(true);
+        A_btn_daftar_brg1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_kategoriActionPerformed(evt);
+                A_btn_daftar_brg1ActionPerformed(evt);
             }
         });
-        jPanel2.add(A_btn_kategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 230, 60));
-
-        A_btn_pembelian.setBackground(java.awt.Color.darkGray);
-        A_btn_pembelian.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        A_btn_pembelian.setForeground(new java.awt.Color(255, 255, 255));
-        A_btn_pembelian.setText("PEMBELIAN BRG");
-        A_btn_pembelian.setOpaque(true);
-        A_btn_pembelian.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                A_btn_pembelianActionPerformed(evt);
-            }
-        });
-        jPanel2.add(A_btn_pembelian, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 230, 60));
+        jPanel2.add(A_btn_daftar_brg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 230, 60));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 250, 960));
 
@@ -228,37 +164,13 @@ public class dashboard_admin extends javax.swing.JFrame {
         showPanel(beranda);
     }//GEN-LAST:event_A_btn_berandaActionPerformed
 
-    private void A_btn_daftar_userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_daftar_userActionPerformed
-        // TODO add your handling code here:
-        daftar_user user = new daftar_user();   // buat instance panel
-        showPanel(user);
-    }//GEN-LAST:event_A_btn_daftar_userActionPerformed
-
-    private void A_btn_lap_keuanganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_lap_keuanganActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_lap_keuanganActionPerformed
-
-    private void A_btn_lap_transaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_lap_transaksiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_lap_transaksiActionPerformed
-
-    private void A_btn_lap_pembelianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_lap_pembelianActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_lap_pembelianActionPerformed
-
     private void A_btn_daftar_brgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_daftar_brgActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_A_btn_daftar_brgActionPerformed
 
-    private void A_btn_kategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_kategoriActionPerformed
+    private void A_btn_daftar_brg1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_daftar_brg1ActionPerformed
         // TODO add your handling code here:
-        kategori_barang kategori = new kategori_barang();   // buat instance panel
-        showPanel(kategori);
-    }//GEN-LAST:event_A_btn_kategoriActionPerformed
-
-    private void A_btn_pembelianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_pembelianActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_A_btn_pembelianActionPerformed
+    }//GEN-LAST:event_A_btn_daftar_brg1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -277,14 +189,18 @@ public class dashboard_admin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(dashboard_admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboard_kasir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(dashboard_admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboard_kasir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(dashboard_admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboard_kasir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(dashboard_admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboard_kasir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -293,7 +209,7 @@ public class dashboard_admin extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new dashboard_admin().setVisible(true);
+                new dashboard_kasir().setVisible(true);
             }
         });
     }
@@ -301,12 +217,7 @@ public class dashboard_admin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton A_btn_beranda;
     private javax.swing.JButton A_btn_daftar_brg;
-    private javax.swing.JButton A_btn_daftar_user;
-    private javax.swing.JButton A_btn_kategori;
-    private javax.swing.JButton A_btn_lap_keuangan;
-    private javax.swing.JButton A_btn_lap_pembelian;
-    private javax.swing.JButton A_btn_lap_transaksi;
-    private javax.swing.JButton A_btn_pembelian;
+    private javax.swing.JButton A_btn_daftar_brg1;
     private javax.swing.JPanel A_panel_utama;
     private javax.swing.JLabel A_txt_1;
     private javax.swing.JLabel A_txt_2;

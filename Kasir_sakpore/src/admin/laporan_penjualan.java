@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package kasir;
+package admin;
 
 /**
  *
- * @author Acer Aspire Lite 15
+ * @author Acer
  */
-public class detail_transaksi extends javax.swing.JPanel {
+public class laporan_penjualan extends javax.swing.JPanel {
 
     /**
-     * Creates new form detail_transaksi
+     * Creates new form laporan_penjualan
      */
-    public detail_transaksi() {
+    public laporan_penjualan() {
         initComponents();
     }
 
