@@ -250,6 +250,8 @@ public class dashboard_admin extends javax.swing.JFrame {
 
     private void A_btn_kategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_kategoriActionPerformed
         // TODO add your handling code here:
+        kategori_barang kategori = new kategori_barang();   // buat instance panel
+        showPanel(kategori);
     }//GEN-LAST:event_A_btn_kategoriActionPerformed
 
     private void A_btn_pembelianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A_btn_pembelianActionPerformed
