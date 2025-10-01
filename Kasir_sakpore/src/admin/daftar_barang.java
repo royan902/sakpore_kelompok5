@@ -94,7 +94,7 @@ public class daftar_barang extends javax.swing.JPanel {
             jTable1.getColumnModel().getColumn(0).setMaxWidth(40);
         }
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 1590, 730));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 260, 1590, 730));
 
         jButton2.setBackground(new java.awt.Color(0, 204, 51));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N

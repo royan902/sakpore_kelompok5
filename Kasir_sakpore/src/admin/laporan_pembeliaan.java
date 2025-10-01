@@ -35,7 +35,9 @@ public class laporan_pembeliaan extends javax.swing.JPanel {
         jTextField1 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
 
-        setMinimumSize(new java.awt.Dimension(1650, 940));
+        setMaximumSize(new java.awt.Dimension(1700, 940));
+        setMinimumSize(new java.awt.Dimension(1700, 940));
+        setPreferredSize(new java.awt.Dimension(1700, 940));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
